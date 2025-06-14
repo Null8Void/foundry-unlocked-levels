@@ -5,9 +5,21 @@
   "description": "Raises the D&D 5e multiclassing level cap from 20 to 40.",
   "version": "1.0.0",
   "author": "Null8Void",
-  "minimumCoreVersion": "10",
-  "compatibleCoreVersion": "11",
-  "systems": ["dnd5e"],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.344",
+    "maximum": "13"
+  },
+  "systems": [
+    {
+      "id": "dnd5e",
+      "compatibility": {
+        "minimum": "2.0.0",
+        "verified": "2.4.1",
+        "maximum": "2.5.0"
+      }
+    }
+  ],
   "scripts": ["scripts/overrideLevelLimit.js"],
   "url": "https://github.com/Null8Void/foundry-unlocked-levels",
   "manifest": "https://raw.githubusercontent.com/Null8Void/foundry-unlocked-levels/main/module.json",
