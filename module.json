@@ -3,31 +3,37 @@
   "name": "unlocked-levels",
   "title": "Unlocked Levels (5e)",
   "description": "Raises the D&D 5e multiclassing level cap from 20 to 40.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Null8Void",
   "compatibility": {
     "minimum": "13",
-    "verified": "13.0",
-    "maximum": "13.x"
+    "verified": "13.344",
+    "maximum": "13"
   },
   "systems": [
     {
       "id": "dnd5e",
       "type": "system",
       "compatibility": {
-        "minimum": "2.0.0",
-        "verified": "2.4.1",
-        "maximum": "2.5.0"
+        "minimum": "5.0.0",
+        "verified": "5.0.3",
+        "maximum": "5.0.99"
       }
     }
   ],
-  "esmodules": ["scripts/overrideLevelLimit.js"],
+  "scripts": ["scripts/overrideLevelLimit.js"],
   "url": "https://github.com/Null8Void/foundry-unlocked-levels",
   "manifest": "https://raw.githubusercontent.com/Null8Void/foundry-unlocked-levels/main/module.json",
   "download": "https://github.com/Null8Void/foundry-unlocked-levels/archive/refs/heads/main.zip",
   "dependencies": [
     {
       "name": "lib-wrapper",
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/ruipin/fvtt-lib-wrapper/master/module.json"
+    }
+  ]
+}
+
       "type": "module",
       "manifest": "https://raw.githubusercontent.com/ruipin/fvtt-lib-wrapper/master/module.json"
     }
