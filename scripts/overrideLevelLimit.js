@@ -30,9 +30,9 @@ Hooks.once("ready", () => {
     }
   });
 
-  // Patch the class sheet update method to allow values above 20
-  libWrapper.register("unlocked-levels", "CONFIG.Item.sheetClasses.class['dnd5e.ItemSheet5eClass'].cls.prototype._updateObject", async function (wrapped, ...args) {
-    const [event, formData] = args;
+  // Fix: Use documentClass prototype for compatibility with FVTT v13+
+  libWrapper.register("unlocked-levels", "CONFIG.Item.documentClass.prototype._update", async function (wrapped, ...args) {
+    const [formData] = args;
     const levelPath = "system.levels";
 
     if (formData[levelPath]) {
