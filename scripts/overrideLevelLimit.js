@@ -1,3 +1,6 @@
+// 🔍 Debug log to confirm script is loading
+console.log("🔓 Unlocked Levels module script loaded!");
+
 Hooks.once("ready", () => {
   const MAX_LEVEL = 40;
 
@@ -23,6 +26,7 @@ Hooks.once("ready", () => {
     const levelInput = html.find('input[name="system.levels"]');
     if (levelInput.length) {
       levelInput.attr("max", MAX_LEVEL);
+      console.log("🔧 Patched class sheet level input max to", MAX_LEVEL);
     }
   });
 
