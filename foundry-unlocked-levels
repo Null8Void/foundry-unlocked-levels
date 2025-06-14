@@ -9,9 +9,9 @@ foundry-unlocked-levels/
   "compatibleCoreVersion": "11",
   "systems": ["dnd5e"],
   "scripts": ["scripts/overrideLevelLimit.js"],
-  "url": "https://github.com/YOUR_USERNAME/foundry-unlocked-levels",
-  "manifest": "https://raw.githubusercontent.com/YOUR_USERNAME/foundry-unlocked-levels/main/module.json",
-  "download": "https://github.com/YOUR_USERNAME/foundry-unlocked-levels/archive/refs/heads/main.zip"
+  "url": "https://github.com/Null8Void/foundry-unlocked-levels",
+  "manifest": "https://raw.githubusercontent.com/Null8Void/foundry-unlocked-levels/main/module.json",
+  "download": "https://github.com/Null8Void/foundry-unlocked-levels/archive/refs/heads/main.zip"
 }
 
 ├── README.md
