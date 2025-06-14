@@ -20,6 +20,13 @@
       }
     }
   ],
+  "dependencies": [
+    {
+      "name": "lib-wrapper",
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/ruipin/fvtt-lib-wrapper/master/module.json"
+    }
+  ],
   "scripts": ["scripts/overrideLevelLimit.js"],
   "url": "https://github.com/Null8Void/foundry-unlocked-levels",
   "manifest": "https://raw.githubusercontent.com/Null8Void/foundry-unlocked-levels/main/module.json",
